@@ -11,26 +11,24 @@ The code loads in the data, transforms each series to be stationary,
 removes outliers, estimates factors, and computes the R-squared and
 marginal R-squared values from the estimated factors and factor loadings.
 
-===========================================================================
-List of files:
+
+--- List of files ---
 
 fredfactors.py
-    Performs all the tasks mentioned above using the auxiliary functions described below
+* Performs all the tasks mentioned above using the auxiliary functions described below
 
 prepare_missing.py
-    Transforms the raw data into stationary form
+* Transforms the raw data into stationary form
 
 remove_outliers.py
-    Removes outliers from the data. A data point x is considered an outlier if |x-median|>10*interquartile_range.
+* Removes outliers from the data. A data point x is considered an outlier if |x-median|>10*interquartile_range.
 
 factors_em.py
-    Estimates a set of factors for a given dataset using principal component analysis.
-    The number of factors estimated is determined by an information criterion specified by the user.
-    Missing values in the original dataset are handled using an iterative
-    expectation-maximization algorithm.
+* Estimates a set of factors for a given dataset using principal component analysis. The number of factors estimated is determined by an information criterion specified by the user. Missing values in the original dataset are handled using an iterative expectation-maximization algorithm.
 
 mrsq.py
-    Computes the R-squared and marginal R-squared values from estimated factors and factor loadings.
+* Computes the R-squared and marginal R-squared values from estimated factors and factor loadings.
+
 ===========================================================================
 
 1. prepare_missing -> transforms data according to the rules given in the first row of the data spreadsheet
