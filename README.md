@@ -11,7 +11,7 @@ The code loads in the data, transforms each series to be stationary,
 removes outliers, estimates factors, and computes the R-squared and
 marginal R-squared values from the estimated factors and factor loadings.
 
-=================================================================
+=================================================== <br/>
 List of files:
 
 1. fredfactors.py - Performs all the tasks mentioned above using the auxiliary functions described below
@@ -26,16 +26,17 @@ List of files:
     expectation-maximization algorithm.
 
 5. mrsq.py - Computes the R-squared and marginal R-squared values from estimated factors and factor loadings.
-===============================================================
+=================================================== <br/>
 
-1. prepare_missing -> transforms data according to the rules given in the first row of the data spreadsheet
-2. remove outliners -> set outliers to na -> still missing observations
-3. factors_em
+* prepare_missing -> transforms data according to the rules given in the first row of the data spreadsheet
+* remove outliners -> set outliers to na -> still missing observations
+* factors_em
     -> first set missing values to unconditional mean
         a) transform_data -> standardise based on DEMEAN method (pandas -> numpy)
         b) baing -> compute the number of factors (numpy <-> numpy)
         c) pc2 -> compute factors & make a prediction
 
-===============================================================   
-Code ported to python 3 by George Milunovich (george.milunovich@mq.edu.au)
-===============================================================
+=================================================== <br/>
+Code ported to python 3 by George Milunovich <br/> 
+george.milunovich@mq.edu.au
+=================================================== <br/>
